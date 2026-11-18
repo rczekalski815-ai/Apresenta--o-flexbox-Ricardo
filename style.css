@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    color: rgb(36, 36, 51);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+.cabecalho {
+    background-color: #ffffff;
+    padding: 22px 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    color: #17183d;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #2a28a6;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #353444;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #2a28a6;
+}
+
+
+
+
+.inicio {
+    background-color: #f0f7f2;
+    padding: 85px 0;
+}
+
+.inicio-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.inicio-texto {
+    flex: 1;
+}
+
+.etiqueta {
+    display: inline-block;
+    color: #26289b;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.inicio h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    color: #171a3d;
+    margin-bottom: 22px;
+}
+
+.inicio h1 span {
+    color: #282aa6;
+}
+
+.inicio-texto p {
+    color: #656573;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #24369b;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #17276f;
+    transform: translateY(-3px);
+}
+
+.inicio-imagem {
+    flex: 1;
+}
+
+.inicio-imagem img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+
+
+
+.titulo-secao {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 50px;
+}
+
+.titulo-secao span,
+.contato-texto span {
+    color: #244e9b;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.titulo-secao h2,
+.contato-texto h2 {
+    font-size: 34px;
+    color: #171d3d;
+    margin: 15px 0;
+}
+
+.titulo-secao p {
+    color: #717380;
+    line-height: 1.7;
+}
+
+
+
+.sobre {
+    padding: 85px 0;
+}
+
+.sobre-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card-sobre {
+    flex: 1;
+    background-color: #f5f9f6;
+    padding: 35px 25px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card-sobre:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.icone {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.card-sobre h3 {
+    color: #171b3d;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card-sobre p {
+    color: #717580;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+
+
+.noticias {
+    background-color: #f7f9f7;
+    padding: 85px 0;
+}
+
+.noticias-cards {
+    display: flex;
+    gap: 25px;
+}
+
+.card-noticia {
+    flex: 1;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+    transition: 0.3s;
+}
+
+.card-noticia:hover {
+    transform: translateY(-6px);
+}
+
+.card-noticia img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.noticia-conteudo {
+    padding: 25px;
+}
+
+.categoria {
+    color: #242c9b;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.noticia-conteudo h3 {
+    color: #171d3d;
+    font-size: 18px;
+    margin: 12px 0;
+    line-height: 1.4;
+}
+
+.noticia-conteudo p {
+    color: #717280;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.noticia-conteudo a {
+    color: #24549b;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
+.oportunidades {
+    background-color: #17213d;
+    padding: 75px 0;
+}
+
+.oportunidades-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.oportunidades h2 {
+    color: white;
+    font-size: 35px;
+    max-width: 600px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.oportunidades p {
+    color: #d0dfd5;
+    line-height: 1.8;
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+.botao-claro {
+    background-color: white;
+    color: #17213d;
+}
+
+.botao-claro:hover {
+    background-color: #e2eee6;
+}
+
+.oportunidades-icone {
+    font-size: 110px;
+}
+
+
+
+
+.contato {
+    padding: 85px 0;
+}
+
+.contato-conteudo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.contato-texto {
+    flex: 1;
+    padding-top: 20px;
+}
+
+.contato-texto p {
+    color: #717480;
+    line-height: 1.8;
+    max-width: 450px;
+}
+
+.formulario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f9f6;
+    padding: 35px;
+    border-radius: 12px;
+}
+
+.formulario label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #343644;
+    margin-bottom: 8px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dce5de;
+    border-radius: 6px;
+    background-color: white;
+    margin-bottom: 20px;
+    font-size: 14px;
+    outline: none;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    border-color: #243a9b;
+}
+
+.formulario textarea {
+    resize: vertical;
+}
+
+.formulario button {
+    width: 100%;
+}
+
+
+
+
+.rodape {
+    background-color: #10142c;
+    padding: 45px 0;
+}
+
+.rodape-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo-rodape {
+    color: white;
+}
+
+.rodape p {
+    color: #c1d0c6;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-top: 12px;
+    max-width: 350px;
+}
+
+.rodape-direitos {
+    text-align: right;
+}
+
+.rodape-direitos a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #5162c4;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+
+@media (max-width: 900px) {
+
+    .navegacao {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .inicio-conteudo {
+        gap: 25px;
+    }
+
+    .inicio h1 {
+        font-size: 38px;
+    }
+
+    .noticias-cards {
+        flex-wrap: wrap;
+    }
+
+    .card-noticia {
+        flex-basis: 45%;
+    }
+
+    .contato-conteudo {
+        gap: 30px;
+    }
+
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .cabecalho {
+        padding: 20px 0;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .inicio {
+        padding: 55px 0;
+    }
+
+    .inicio-conteudo {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .inicio h1 {
+        font-size: 34px;
+    }
+
+    .inicio-imagem img {
+        height: 250px;
+    }
+
+    .sobre,
+    .noticias,
+    .contato {
+        padding: 60px 0;
+    }
+
+    .titulo-secao h2,
+    .contato-texto h2 {
+        font-size: 27px;
+    }
+
+    .sobre-cards {
+        flex-direction: column;
+    }
+
+    .noticias-cards {
+        flex-direction: column;
+    }
+
+    .card-noticia {
+        width: 100%;
+    }
+
+    .oportunidades {
+        padding: 55px 0;
+    }
+
+    .oportunidades-conteudo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .oportunidades h2 {
+        font-size: 29px;
+    }
+
+    .oportunidades-icone {
+        font-size: 75px;
+        align-self: center;
+    }
+
+    .contato-conteudo {
+        flex-direction: column;
+    }
+
+    .contato-texto {
+        width: 100%;
+    }
+
+    .formulario {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .rodape-conteudo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rodape-direitos {
+        text-align: left;
+    }
+
+}
